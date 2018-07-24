@@ -3,6 +3,14 @@
     <head>
         <title>PVD Page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script>global(document).on(‘click’, ‘.dropdown-menu-button’, function (e) {
+                e.stopPropagation();
+                });
+        </script>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,8 +29,27 @@
             </div>
         </nav>
         <nav class = "nav nav-fill bg-grey">
-            <a href="#" class="nav-item nav-link">CITY HALL</a>
-            <a href="#" class="nav-item nav-link">DOING BUSINESS</a>
+            <!--<a href="#" class="nav-item nav-link">CITY HALL</a>-->
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopuup="true" aria-expanded="false" href="" style="text-secondary" role="button">CITY HALL</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <!-- Work on this a bit. Try to format it with the other links in the top navbar. Try to improve the dropdown menus as well. -->
+                <a class="dropdown-item" href="http://www.providenceri.gov/i-want-to/">I Want To...</a> 
+                <a class="dropdown-item" href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
+                <a class="dropdown-item" href="http://www.providenceri.gov/departments/">Departments</a>
+                <a class="dropdown-item" href="http://council.providenceri.com/">City Council</a>
+                <a class="dropdown-item" href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
+                </div>
+            </div>
+            <!--<a href="" class="nav-item nav-link">DOING BUSINESS</a> -->
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopuup="true" aria-expanded="false" href="" style="text-secondary" role="button">DOING BUSINESS</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item bg-light" href="http://www.providenceeconomicdevelopment.net/business-portal/index.php">Starting a Business</a>
+                <a class="dropdown-item bg-light" href="http://www.providenceri.gov/inspection-standards/">Construction</a>
+                <a class="dropdown-item bg-light" href="http://www.providenceri.gov/board-of-licenses/">Running a Business</a>
+                <a class="dropdown-item bg-light" href="http://www.providenceri.gov/ethics/">Ethics</a>
+                </div>
+            </div>
             <a href="http://www.providenceri.gov/event/" class="nav-item nav-link">EVENTS</a>
             <a href="http://www.providenceri.gov/news-events/" class="nav-item nav-link">NEWS</a>
             <a href="http://www.providenceri.gov/pvd-311/" class="nav-item nav-link">PVD 311</a>
